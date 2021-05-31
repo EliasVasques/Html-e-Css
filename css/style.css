@@ -1,4 +1,26 @@
 html{
     font-size: 15px;
-    font-family: 'ZCOOL KuaiLe', sans-serif;
+    font-family: 'Pattaya', sans-serif;
+    background-color:snow;
+}
+
+h1{
+    font-size:40px;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    color:snow;
+    background-color:rgb(67, 168, 235);
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color:black;
+}
+
+img{
+    margin: 0px; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
 }
