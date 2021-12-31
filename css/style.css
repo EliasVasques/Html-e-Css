@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-:root {
-    --cor-principal: rgb(46, 14, 58);
-    --cor-secundaria: rgb(88, 86, 86);
-}
 * {
     box-sizing: border-box;
 }
@@ -14,7 +10,7 @@ body {
 
 h1 {
     text-align: center;
-    color: var(--cor-principal);
+    color: #2e0e34;
 }
 ul {
     padding: 0;
@@ -27,54 +23,60 @@ a {
 }
 
 /* NAV */
-nav {
-    margin-left: 20px;
-    margin-top: 20px;
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
 }
 nav ul li {
-    display: inline-block;
-    padding: 10px;
+    padding: 5px;
     font-size: 20px;
 }
 nav ul li:hover {
     background-color: #eee;
 }
+nav ul li a {
+    color: #2e0e34;
+}
 
 /* FOTO */
 #foto {
-    border: 2px solid var(--cor-principal);
+    border: 2px solid #2e0e34;
     border-radius: 100px;
     display: block;
     margin: auto;
 }
 
 /* TECNOLOGIAS*/
-.tecnologias {
+#tecnologias {
     width: 450px;
     margin: auto;
     border: 1px solid #ccc;
     border-radius: 10px;
 
-    margin-top: 20px;
+    margin-top: 180px;
 }
-.tecnologias h2 {
+#tecnologias h2 {
     text-align: center;
 }
-.tecnologias ul {
+#tecnologias ul {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
-.tecnologias ul li img {
+#tecnologias ul li img {
     width: 50px;
 }
 
 /* CONTATOS */
-.contatos {
+#contatos {
     margin: auto;
     margin-top: 50px;
     width: 450px;
+
+    margin-top: 200px;
 }
-.contatos li {
+#contatos li {
     padding: 10px;
     margin: 10px;
 
@@ -84,46 +86,61 @@ nav ul li:hover {
     font-size: 18px;
     text-align: center;
 }
-.contatos a {
+#contatos a {
     color: #000;
 }
 
 /* SOBRE MIM */
-.sobre-mim {
+#sobre-mim {
     width: 450px;
     margin: auto;
     text-align: justify;
+
+    margin-top: 180px;
 }
-.sobre-mim img {
+#sobre-mim img {
     width: 200px;
     display: block;
     margin: auto;
 }
 
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #aaa;
+    margin-top: 200px;
+    height: 100px;
+    color: white;
+}
+
 @media(max-width:450px) {
     /* NAV */
+    nav ul {
+        justify-content: center;
+        
+    }
     nav ul li {
-        padding: 10px;
+        font-size: 17px;
     }
 
     /* TECNOLOGIAS*/
-    .tecnologias {
+    #tecnologias {
         width: 100%;
-    }
-    .tecnologias ul {
-        flex-wrap: wrap;
     }
 
     /* SOBRE MIM */
-    .sobre-mim {
-        width: 100%;
+    #sobre-mim {
+        width: auto;
     }
-    .sobre-mim img {
+    #sobre-mim img {
         width: 150px;
     }
 
     /* CONTATOS */
-    .contatos {
+    #contatos {
         width: 100%;
     }
 }
